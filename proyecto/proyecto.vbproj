@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7512381A-724F-4B23-A7D7-A4FD35C78AD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>proyecto.My.MyApplication</StartupObject>
+    <RootNamespace>proyecto</RootNamespace>
+    <AssemblyName>proyecto</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>proyecto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>proyecto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar_compras.Designer.vb">
+      <DependentUpon>Agregar_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregar_usuario.Designer.vb">
+      <DependentUpon>agregar_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="agregar_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agregar_categoria.Designer.vb">
+      <DependentUpon>frm_agregar_categoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_agregar_categoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Agregar_factura.Designer.vb">
+      <DependentUpon>frm_Agregar_factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Agregar_factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Agregar_cliente.Designer.vb">
+      <DependentUpon>frm_Agregar_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Agregar_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agregar_proveedor.Designer.vb">
+      <DependentUpon>frm_agregar_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_agregar_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_categoria.Designer.vb">
+      <DependentUpon>frm_categoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_categoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Clientes.Designer.vb">
+      <DependentUpon>frm_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agregar_producto.Designer.vb">
+      <DependentUpon>frm_agregar_producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_agregar_producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_compras.Designer.vb">
+      <DependentUpon>Frm_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Producto.Designer.vb">
+      <DependentUpon>frm_Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedor.Designer.vb">
+      <DependentUpon>frm_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reporte_compras.Designer.vb">
+      <DependentUpon>frm_reporte_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reporte_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reporte_ventas.Designer.vb">
+      <DependentUpon>frm_reporte_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reporte_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_usuario.Designer.vb">
+      <DependentUpon>frm_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ventas.Designer.vb">
+      <DependentUpon>frm_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_db.vb" />
+    <Compile Include="modificar_categoria.Designer.vb">
+      <DependentUpon>modificar_categoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_categoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_cliente.Designer.vb">
+      <DependentUpon>Modificar_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificar_compras.Designer.vb">
+      <DependentUpon>modificar_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificar_factura.Designer.vb">
+      <DependentUpon>modificar_factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificar_producto.Designer.vb">
+      <DependentUpon>modificar_producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificar_Proveedor.Designer.vb">
+      <DependentUpon>modificar_Proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificar_usuario.Designer.vb">
+      <DependentUpon>modificar_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="usuario.Designer.vb">
+      <DependentUpon>usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agregar_compras.resx">
+      <DependentUpon>Agregar_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregar_usuario.resx">
+      <DependentUpon>agregar_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agregar_categoria.resx">
+      <DependentUpon>frm_agregar_categoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Agregar_factura.resx">
+      <DependentUpon>frm_Agregar_factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Agregar_cliente.resx">
+      <DependentUpon>frm_Agregar_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agregar_proveedor.resx">
+      <DependentUpon>frm_agregar_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_categoria.resx">
+      <DependentUpon>frm_categoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Clientes.resx">
+      <DependentUpon>frm_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agregar_producto.resx">
+      <DependentUpon>frm_agregar_producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_compras.resx">
+      <DependentUpon>Frm_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Producto.resx">
+      <DependentUpon>frm_Producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedor.resx">
+      <DependentUpon>frm_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reporte_compras.resx">
+      <DependentUpon>frm_reporte_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reporte_ventas.resx">
+      <DependentUpon>frm_reporte_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_usuario.resx">
+      <DependentUpon>frm_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ventas.resx">
+      <DependentUpon>frm_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_categoria.resx">
+      <DependentUpon>modificar_categoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_cliente.resx">
+      <DependentUpon>Modificar_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_compras.resx">
+      <DependentUpon>modificar_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_factura.resx">
+      <DependentUpon>modificar_factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_producto.resx">
+      <DependentUpon>modificar_producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_Proveedor.resx">
+      <DependentUpon>modificar_Proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_usuario.resx">
+      <DependentUpon>modificar_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuario.resx">
+      <DependentUpon>usuario.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
